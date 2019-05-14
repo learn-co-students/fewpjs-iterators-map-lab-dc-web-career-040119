@@ -1,3 +1,5 @@
+console.log("Connected")
+
 const tutorials = [
   'what does the this keyword mean?',
   'What is the Contutorialuctor OO pattern?',
@@ -11,6 +13,14 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+function titleCased(){
+  let newtext = []
+    return tutorials.map(function(e){
+    console.log(newtext = e.split(' '))
+    for(var i =0; i < newtext.length; i++){
+      console.log(newtext[i] = newtext[i].charAt(0).toUpperCase() + newtext[i].slice(1))
+    }
+return newtext.join(' ')
+  })
+
 }
