@@ -19,5 +19,3 @@ const titleCased = () =>
     );
     return capitalizedWords.join(' ');
   });
-
-console.log(titleCased());
